@@ -1,0 +1,966 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Main container frames */
+.frame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* Wrapper for each section */
+.div-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  position: relative;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 90px;
+  height: 600px;
+  background-color: black;
+  left: 100px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+
+li{
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-orientation: mixed;
+  font-weight: 600;
+}
+
+a img{
+  padding: 16px;
+}
+
+a img:hover {
+  background-color: #2b2b2b;
+  transition: 0.2s ease;
+  border-radius: 50px;
+}
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero-section {
+  position: relative;
+  width: 1080px;
+  height: 720px;
+}
+
+.element {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.mask-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 700px;
+}
+
+.large-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.frame-wrapper {
+  position: absolute;
+  top: 415px;
+  left: 74px;
+  width: 477px;
+  padding: 20px 14px;
+  border-radius: 20px;
+  border: 3px solid #000;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+}
+
+.niche,
+.font-wrapper {
+  display: flex;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  justify-content: center;
+}
+
+.view {
+  width: 100%;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: white;
+  border: 1px solid #000;
+}
+
+.button {
+  font-family: "Michroma-Regular", Helvetica;
+  font-size: 20px;
+}
+
+.p {
+  position: absolute;
+  top: 126px;
+  left: 96px;
+  width: 434px;
+  font-family: "Michroma-Regular";
+  font-size: 20px;
+}
+
+/* about button */
+.hero-section .button-wrapper {
+  position: relative;
+  z-index: 50;
+  border: 1px solid #000;
+  background-color: white;
+  display: flex;
+  top: 320px;
+  width: 477px;
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.div-2 {
+  width: 1080px;
+  height: 720px;
+  background: #fff;
+  position: relative;
+}
+
+.text-wrapper-3,
+.text-wrapper-4 {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.mask-group-2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 700px;
+}
+
+.about-text {
+  margin-top: 104px;
+  width: 525px;
+  font-size: 20px;
+  padding: 0 10px;
+  margin-left: 70px;
+}
+
+.button-wrapper {
+  margin-top: 275px;
+  bottom: 50px;
+  margin-left: 70px;
+  width: 640px;
+  height: 68px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 0.2s ease;
+}
+
+.button-wrapper:hover{
+  border: 4px solid black;
+  font-weight: bolder;
+}
+
+.large-text-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===========================
+   PROJECTS (WEBSITE + DESIGN)
+=========================== */
+
+.div-6 {
+  position: absolute;
+  top: 172px;
+  left: 64px;
+  width: 1016px;
+  display: flex;
+  gap: 20px;
+}
+
+.project-cards {
+  width: 322px;
+  height: 456px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px 0px 50px 0px;
+  border: 2px solid #000000;
+}
+
+.project-cards .frame {
+  width: 322px;
+  height: 456px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-cards .photo-container {
+  width: 300px;
+  height: 200px;
+  background-size: 100% 100%;
+}
+
+.project-cards .view {
+  width: 100%;
+  height: 35px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: white;
+}
+
+.project-cards .view:hover {
+  background-color: gray;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.project-cards .button {
+  font-family: "Michroma-Regular";
+  font-size: 15px;
+  color: #000;
+}
+
+.project-cards .frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-cards .text-wrapper {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.project-cards .a-sample-of {
+  font-size: 15px;
+  font-family: "Michroma-Regular";
+}
+
+.project-cards .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-cards .niche {
+  padding: 5px 30px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.project-cards .font {
+  font-size: 11px;
+}
+
+/* project card content */
+.project-cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  height: 150px;
+}
+
+/*============================
+  THUMBNAIL SECTION (REWORKED)
+============================*/
+.thumbnail-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* Large heading inside the thumbnail section */
+.thumbnail-section .large-text {
+  width: 1080px;              /* match main content width used elsewhere */
+  font-weight: 900;
+  font-size: 80px;
+  margin: 0;
+  padding: 0 0 0 70px;        /* align with other sections that use left offset */
+  box-sizing: border-box;
+  position: relative;         /* ensure z-index applies */
+  z-index: 10;                /* above the fixed header (header has z-index:1) */
+  color: #000;                /* ensure visible on white backgrounds */
+}
+
+.thumbnail-section .large-text h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+/* Carousel */
+.carousel{
+  width: 1080px;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.group{
+  display: flex;
+  gap: 16px;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-80%);
+  }
+}
+
+.card {
+  display: flex;
+  height: 400px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25), 0 6px 12px rgba(0,0,0,0.08);
+  z-index: 2;
+  will-change: transform, box-shadow;
+}
+
+
+
+/* Button wrapper inside the thumbnail section */
+.thumbnail-section .button-wrapper {
+  width: 477px;              /* same size used elsewhere */
+  border-radius: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+/* Keep hover affordance consistent */
+.thumbnail-section .button-wrapper:hover {
+  border: 4px solid #000;
+  font-weight: bolder;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .thumbnail-section .large-text,
+  .thumbnail-grid {
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .thumbnail-section .large-text {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thumbnail-section {
+    padding: 40px 12px;
+  }
+  .thumbnail-section .large-text {
+    font-size: 36px;
+    padding-left: 12px;
+  }
+  .card {
+    aspect-ratio: 1 / 1;
+    min-height: 100px;
+  }
+  .thumbnail-section .button-wrapper {
+    width: 100%;
+  }
+}
+
+/* ===========================
+   CONTACT SECTION 
+=========================== */
+.contact-body {
+  margin-top: 100px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  width: 1081px;
+  height: 590px;
+  border: 3px solid #000;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  position: relative;
+  margin-top: 40px;
+  background-color: white;
+}
+
+/* Circles across the top left */
+.contact-circles {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+.contact-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  background: #fff;
+}
+
+/* Left side text */
+.contact-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+/* Right side form */
+.contact-form {
+  padding: 5px;
+}
+
+.contact-form h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-box {
+  width: 100%;
+  margin: 8px 0 20px 0;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transform: skewX(-15deg);
+}
+
+.input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  transform: skewX(15deg);
+  font-size: 16px;
+  padding: 8px 4px;
+}
+
+.services {
+  margin-top: 8px;
+  gap: 20px;
+  font-size: 18px;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 2px solid #000;
+  font-size: 22px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* === === Send Email Designs === === */
+/* =====================
+  Loading Container
+===================== */
+/* Confirmation Loader Overlay */
+.loadingContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.loadingContainer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* The white box */
+.loadingBox {
+  width: 1026px;
+  height: 648px;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+/* header text */
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* =====================
+  Loader Confirmations
+===================== */
+/* From Uiverse.io by nima-mollazadeh */ 
+.loader {
+  --dur: 2s;
+  display: block;
+  margin: auto;
+  width: 14em;
+  height: auto;
+}
+.loader__glare-top,
+.loader__glare-bottom,
+.loader__model,
+.loader__motion-thick,
+.loader__motion-medium,
+.loader__motion-thin,
+.loader__sand-drop,
+.loader__sand-fill,
+.loader__sand-grain-left,
+.loader__sand-grain-right,
+.loader__sand-line-left,
+.loader__sand-line-right,
+.loader__sand-mound-top,
+.loader__sand-mound-bottom {
+  animation-duration: var(--dur);
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-iteration-count: infinite;
+}
+.loader__glare-top {
+  animation-name: glare-top;
+}
+.loader__glare-bottom {
+  animation-name: glare-bottom;
+}
+.loader__model {
+  animation-name: loader-flip;
+  transform-origin: 12.25px 16.75px;
+}
+.loader__motion-thick,
+.loader__motion-medium,
+.loader__motion-thin {
+  transform-origin: 26px 26px;
+}
+.loader__motion-thick {
+  animation-name: motion-thick;
+}
+.loader__motion-medium {
+  animation-name: motion-medium;
+}
+.loader__motion-thin {
+  animation-name: motion-thin;
+}
+.loader__sand-drop {
+  animation-name: sand-drop;
+}
+.loader__sand-fill {
+  animation-name: sand-fill;
+}
+.loader__sand-grain-left {
+  animation-name: sand-grain-left;
+}
+.loader__sand-grain-right {
+  animation-name: sand-grain-right;
+}
+.loader__sand-line-left {
+  animation-name: sand-line-left;
+}
+.loader__sand-line-right {
+  animation-name: sand-line-right;
+}
+.loader__sand-mound-top {
+  animation-name: sand-mound-top;
+}
+.loader__sand-mound-bottom {
+  animation-name: sand-mound-bottom;
+  transform-origin: 12.25px 31.5px;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 90%, 10%);
+    --fg: hsl(var(--hue), 90%, 90%);
+  }
+}
+/* Animation */
+@keyframes loader-flip {
+  from {
+    transform: translate(13.75px, 9.25px) rotate(-180deg);
+  }
+  24%,
+  to {
+    transform: translate(13.75px, 9.25px) rotate(0);
+  }
+}
+@keyframes glare-top {
+  from {
+    stroke: rgba(255, 255, 255, 0);
+  }
+  24%,
+  to {
+    stroke: white;
+  }
+}
+@keyframes glare-bottom {
+  from {
+    stroke: white;
+  }
+  24%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes motion-thick {
+  from {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.67turn);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: rgb(32, 32, 32);
+    stroke-dashoffset: 141.11;
+    transform: rotate(1turn);
+  }
+  40%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1.33turn);
+  }
+}
+@keyframes motion-medium {
+  from,
+  8% {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.5turn);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: white;
+    stroke-dashoffset: 147.53;
+    transform: rotate(0.83turn);
+  }
+  32%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1.17turn);
+  }
+}
+@keyframes motion-thin {
+  from,
+  4% {
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(0.33turn);
+  }
+  24% {
+    animation-timing-function: cubic-bezier(0.33, 1, 0.67, 1);
+    stroke: rgb(53, 53, 53);
+    stroke-dashoffset: 134.7;
+    transform: rotate(0.67turn);
+  }
+  44%,
+  to {
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 153.94;
+    transform: rotate(1turn);
+  }
+}
+@keyframes sand-drop {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 1;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -107;
+  }
+}
+@keyframes sand-fill {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 55;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -54;
+  }
+}
+@keyframes sand-grain-left {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 29;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+@keyframes sand-grain-right {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 27;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+@keyframes sand-line-left {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 53;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -55;
+  }
+}
+@keyframes sand-line-right {
+  from,
+  10% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    stroke-dashoffset: 14;
+  }
+  70%,
+  to {
+    stroke-dashoffset: -24.5;
+  }
+}
+@keyframes sand-mound-top {
+  from,
+  10% {
+    animation-timing-function: linear;
+    transform: translate(0, 0);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    transform: translate(0, 1.5px);
+  }
+  51%,
+  to {
+    transform: translate(0, 13px);
+  }
+}
+@keyframes sand-mound-bottom {
+  from,
+  31% {
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    transform: scale(1, 0);
+  }
+  56%,
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+/* =====================
+  Confirmation Message
+===================== */
+/* Wrapper = overlay center container */
+.confirmationWrapper {
+  display: flex; /* Keep it flex so alignment works */
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.confirmationWrapper.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Main Box */
+.confirmationBox {
+  width: 1026px;
+  height: 648px;
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Title */
+.confirmationBox h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+/* Icon */
+.confirmationIcon {
+  width: 160px;
+  margin-bottom: 35px;
+}
+
+/* Subtitle */
+.confirmationBox h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Message */
+.confirmationBox p {
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+/* Button */
+.doneBtn {
+  width: 260px;
+  height: 60px;
+  font-size: 20px;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.doneBtn:hover {
+  transform: scale(1.05);
+}
